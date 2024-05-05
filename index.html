@@ -4,81 +4,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv='cache-control' content='no-cache'>
-  <meta http-equiv='expires' content='0'>
-  <meta http-equiv='pragma' content='no-cache'>
-  <title>Web Reskita</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Reskita Amelia's Portofolio</title>
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<style>
-  body,
-  h1,
-  h2,
-  p {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Styling the body */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-
-  /* Styling the portfolio item */
-  .portfolio-item {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .portfolio-item img {
-    width: 200px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-
-  /* Styling the sections */
-  .section {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Styling headings */
-  h1,
-  h2 {
-    color: #333;
-  }
-
-  /* Styling paragraphs */
-  p {
-    margin-bottom: 10px;
-  }
-</style>
 
 <body>
-  <div class="portfolio-item">
-    <img src="foro res.jpg" alt="foto reskita">
-    <h1>Reskita Amelia</h1>
-    <p>Jenis Kelamin: Perempuan</p>
-    <p>Alamat: Makassar</p>
-    <p>Tanggal Lahir: Pangkep, 7 Mei 2001</p>
-    <p>Pekerjaan/Aktifitas: Mahasiswa</p>
-    <p>Hobi: Baca buku</p>
-  </div>
-  <div class="section">
-    <h2>About Me</h2>
-    <p>Hai, ini adalah website portofolio pertama saya.</p>
-  </div>
-  <div class="section">
-    <h2>Contact Me</h2>
-    <p>081123456789</p>
-  </div>
+  <header class="header">
+    <a href="#" class="logo">Portofolio</a>
+
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#about" class="active">About</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#interests">Interests</a>
+      <a href="#award">Award</a>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION DESIGN -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h3>Hi, It's Me</h3>
+      <h1>Reskita Amelia</h1>
+      <h3>and I'm a <span>Data Enthusiast</span></h3>
+      <p>Hi, i am a student of Hasanuddin University who is interested in data, especially Data Science. I like to
+        explore data and visualize it into information that can be accepted by the audience. In my spare time, I like to
+        read books both fiction and non-fiction. Besides that, I also like to watch movies of various genres and Korean
+        dramas.</p>
+      <div class="social-media">
+        <a href="https://www.instagram.com/reskitaamelia_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/reskita-amelia-777187203/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/reskitaamelia" target=""><i class="fa-brands fa-github"></i></a>
+      </div>
+      <a href="#" class="btn">Contact Me</a>
+    </div>
+
+    <div class="about-img">
+      <img src="assets/foto res.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- EXPERIENCES SECTION DESIGN -->
+  <section class="experiences" id="experiences">
+    <h2 class="heading">My <span>Experiences</span></h2>
+
+    <div class="experiences-container">
+      <div class="experiences-box">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Data Visualization</h3>
+        <p>I had an internship experience at Balai Monitor Stasiun Frekuensi Radio Kelas I Makassar for three months.
+          There, I was involved in a data
+          visualization project using python for data analysis and google data studio for visualization. I contributed
+          to decision making by presenting radio frequency data in a visual form that was easily understood by the team.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION DESIGN -->
+  <section class="education" id="education">
+    <h2 class="heading">My <span>Education</span></h2>
+
+    <div class="education-container">
+      <div class="education-box">
+        <i class="fa-solid fa-school"></i>
+        <h3>Universitas Hasanuddin</h3>
+        <p>2019 - 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION DESIGN -->
+  <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+      <div class="skills-box">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Data Visualization</h3>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-solid fa-code"></i>
+        <h3>Machine Learning</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTS SECTION DESIGN -->
+  <section class="interests" id="interests">
+    <h2 class="heading">My <span>Interests</span></h2>
+
+    <div class="interests-container">
+      <div class="interests-box">
+        <h3>Data Science</h3>
+      </div>
+
+      <div class="interests-box">
+        <h3>Data Engineering</h3>
+      </div>
+
+      <div class="interests-box">
+        <h3>Data Analysis</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARD SECTION DESIGN -->
+  <section class="award" id="award">
+    <h2 class="heading">My <span>Award</span></h2>
+
+    <div class="award-container">
+      <div class="award-box">
+        <i class="fa-solid fa-medal"></i>
+        <h3>UI/UX Competition</h3>
+        <p>1st place in the UI/UX competition organized by President University in 2021. Designing a prototype
+          application to reduce the suicide rate in the young age range by helping someone to feel comfortable to tell
+          about whatever they want to tell.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
